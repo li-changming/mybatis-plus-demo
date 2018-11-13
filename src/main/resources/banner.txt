@@ -1,0 +1,27 @@
+${AnsiColor.BRIGHT_YELLOW}
+/**
+ *　　　　　　　　┏┓　　　┏┓+ +
+ *　　　　　　　┏┛┻━━━┛┻┓ + +
+ *　　　　　　　┃　　　　　　　┃ 　
+ *　　　　　　　┃　　　━　　　┃ ++ + + +
+ *　　　　　　 ████━█████+
+ *　　　　　　　┃　　　　　　　┃ +
+ *　　　　　　　┃　　　┻　　　┃
+ *　　　　　　　┃　　　　　　　┃ + +
+ *　　　　　　　┗━┓　　　┏━┛
+ *　　　　　　　　　┃　　　┃　　　　　　　　　　　
+ *　　　　　　　　　┃　　　┃ + + + +
+ *　　　　　　　　　┃　　　┃　　　　Code is far away from bug with the animal protecting　　　　　　　
+ *　　　　　　　　　┃　　　┃ + 　　　　神兽保佑,代码无bug　　
+ *　　　　　　　　　┃　　　┃
+ *　　　　　　　　　┃　　　┃　　+　　　　　　　　　
+ *　　　　　　　　　┃　 　　┗━━━┓ + +
+ *　　　　　　　　　┃ 　　　　　　　┣┓
+ *　　　　　　　　　┃ 　　　　　　　┏┛
+ *　　　　　　　　　┗┓┓┏━┳┓┏┛ + + + +
+ *　　　　　　　　　　┃┫┫　┃┫┫
+ *　　　　　　　　　　┗┻┛　┗┻┛+ + + +
+ */
+
+${AnsiColor.BRIGHT_BLUE}
+::: Project (version:${application.version}) :::              Spring-Boot ${spring-boot.version}
