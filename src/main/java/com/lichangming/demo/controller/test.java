@@ -1,5 +1,6 @@
 package com.lichangming.demo.controller;
 
+import com.lichangming.demo.rabbitmq.AmqpServiceProvider;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
@@ -20,7 +21,8 @@ import java.util.HashMap;
 public class test {
     @Autowired
     RedisTemplate redisTemplate;
-
+    @Autowired
+    AmqpServiceProvider amqpServiceProvider;
     @Autowired
     StringRedisTemplate stringRedisTemplate;
     @RequestMapping(value = "/")
@@ -31,8 +33,6 @@ public class test {
     }
 
     @RequestMapping(value = "/redistest")
-    @ApiOperation(value = "根据id查询学生信息", notes = "查询数据库中某个的学生信息")
-    @ApiImplicitParam(name = "id", value = "学生ID", paramType = "path", required = true, dataType = "Integer")
     public String redistest() {
         HashMap<Object, Object> map = new HashMap<>();
         map.put("name","lichangming");
@@ -40,5 +40,11 @@ public class test {
         map.put("slogan","帅");
         redisTemplate.opsForValue().set("user",map);
         return "添加成功";
+    }
+
+    @RequestMapping(value = "/rabbitmqTest")
+    public String rabbitmqTest() {
+        amqpServiceProvider.test("发送一条消息");
+        return "发送成功";
     }
 }

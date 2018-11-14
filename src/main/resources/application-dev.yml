@@ -15,8 +15,22 @@ spring:
         max-idle: 8
         min-idle: 0
     timeout: 10000
+  rabbitmq:
+    host: 127.0.0.1
+    port: 15672
+    username: ming
+    password: password
+    virtual-host: /
+    publisher-confirms: true
+    publisher-returns: true
+
+
 
 server:
   port: 80
   servlet:
      context-path: /demo
+logging:
+  file: myApp.log
+  level:
+    root: debug
