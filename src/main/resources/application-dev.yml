@@ -3,7 +3,18 @@ spring:
   profiles: dev
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/glogan?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password: 
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+    timeout: 10000
 
 server:
   port: 80
